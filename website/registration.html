@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - School Of Education</title>
+  <link rel="stylesheet" href="regitration.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>School Of Education</h1>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contactWeb.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="registration">
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="course">Select Course:</label>
+          <select id="course" name="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="Introduction to HTML & CSS">Introduction to HTML & CSS</option>
+            <option value="JavaScript Fundamentals">JavaScript Fundamentals</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Data Analysis with Python">Data Analysis with Python</option>
+            <option value="Web Design Principles">Web Design Principles</option>
+            <option value="Introduction to SQL">Introduction to SQL</option>
+            <option value="Introduction to Machine Learning">Introduction to Machine Learning</option>
+            <option value="Digital Marketing Basics">Digital Marketing Basics</option>
+            <option value="Business Communication Skills">Business Communication Skills</option>
+            <option value="Project Management Fundamentals">Project Management Fundamentals</option>
+            <option value="Introduction to Artificial Intelligence">Introduction to Artificial Intelligence</option>
+            <option value="Mobile App Development Basics">Mobile App Development Basics</option>
+            <option value="Social Media Marketing Strategies">Social Media Marketing Strategies</option>
+            <option value="Financial Management for Entrepreneurs">Financial Management for Entrepreneurs</option>
+            <option value="Introduction to Blockchain Technology">Introduction to Blockchain Technology</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="paymentMethod">Payment Method:</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="" disabled selected>Select Payment Method</option>
+            <option value="Cash">Cash</option>
+            <option value="Credit">Credit</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="studentId">Student ID (If from Institute):</label>
+          <input type="text" id="studentId" name="studentId">
+        </div>
+        <button type="button" id="calculateButton">Calculate Total</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Educational Website. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="registeration.js"></script>
+</body>
+</html>
